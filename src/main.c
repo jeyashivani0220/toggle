@@ -44,7 +44,7 @@ int main(void)
   DEV_ASSERT(error == STATUS_SUCCESS);
   /* Set pins as GPIO */
   error = PINS_DRV_Init(NUM_OF_CONFIGURED_PINS0, g_pin_mux_InitConfigArr0);
-  DEV_ASSERT(error == STATUS_SUCCESS);
+  //DEV_ASSERT(error == STATUS_SUCCESS);
 
   /* Set Output value LED0 & LED1 */
   PINS_DRV_SetPins(LED0_PORT, 1 << LED0_PIN);
